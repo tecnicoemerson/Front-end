@@ -1,0 +1,358 @@
+/* *{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    vertical-align: baseline;
+    list-style: none;
+    font-family: Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+} /*
+
+  /*estilo em ordem id, class e seletor*/
+
+#paragrafos {
+    color: bisque;
+}
+
+.sticky{
+    width: 100px;
+    height: 100px;
+    background-color: #833a3a;
+    border: 1px solid rgb(58, 51, 153);
+    margin-top: 120px;
+    position: sticky;
+    top: 10px;
+    right: 50px;
+}
+
+.titulo {
+    background-color: black;
+    color: aquamarine;
+}
+
+.bg-imagem{
+    background-image: url(/css/img/wallpaperflare.com_wallpaper.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.not-centered-bg,
+.centered-bg{
+    height: 400px;
+    width: 400px;
+    background-image: url(/css/img/wallpaperflare.com_wallpaper.jpg);
+}
+
+.centered-bg{
+    background-position: center;
+    background-size: cover;
+}
+
+.height-width{
+    height: 200px;
+    width:100px ;
+    background-color: rgb(173, 111, 36);
+}
+
+.height-width-2{
+    height: 200px;
+    background-color: beige;
+}
+
+.without-padding, .padding{
+    background-color: black;
+    color: white;
+}
+
+.padding{
+    padding: 20px;
+}
+
+.padding-individual{
+    background-color: lightslategrey;
+    color: white;
+    padding-top: 5px;
+    padding-left: 10px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+.Shorthand-padding{
+    background-color: #444;
+    padding: 6px 12px 18px 24px;
+}
+
+.Shorthand-padding-2{
+    background-color: #7c4747;
+    padding: 10px 20px;
+    /*padding: 6px 12px 18px 24px;*/
+}
+
+.without-border-box{
+    background-color: #444;
+    color: white;
+    width: 400px;
+    padding: 50px;
+}
+
+.border-box{
+    background-color: #5f5353;
+    color: white;
+    width: 400px;
+    padding: 50px;
+    box-sizing: border-box;
+}
+
+.border{
+    border: 5px solid rebeccapurple;
+    padding: 10px;
+}
+
+.border-2{
+    border: 2px dotted rebeccapurple;
+    padding: 10px;
+}
+
+.border-left{
+    border-left: 3px solid red;
+    background-color: #222;
+    padding: 25px;
+}
+.border-bottom{
+    border-bottom: 5px double #7c4747;
+    background-color: #222;
+    padding: 20px;
+}
+
+.rounded-p{
+    border: 4px solid blue;
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 15px;
+}
+
+.rounded-p-2{
+    background-color: #000;
+    color: blue;
+    padding: 15px;
+    border-radius: 25px;
+}
+
+.margin{
+    margin: 15px;
+    background-color: #222;
+}
+
+.margin-top{
+    margin-top: 50px;
+    background-color: #afafaf;
+    padding: 10px;
+}
+
+.margin-shorthand{
+    background-color: #5f5353;
+    margin: 5px 10px 15px 20px;
+}
+
+.box-model{
+    margin: 20px;
+    padding: 15px 25px;
+    border: 3px solid rosybrown;
+    outline: 5px solid #7c4747;
+    border-radius: 7px;
+    width: 200px;
+    height: 100px;
+}
+
+.text-aligned{
+    text-align: right;
+}
+
+.container-center{
+    text-align: center;
+    width: 300px;
+    border: 1px solid red;
+}
+
+.underline{
+    text-decoration: underline;
+}
+
+.line-trough{
+    text-decoration: line-through;
+}
+
+.remove-underline{
+    text-decoration: none;
+    color: brown;
+}
+
+.upper{
+    text-transform: uppercase;
+}
+
+.lower{
+    text-transform: lowercase;
+}
+
+.spacing{
+    letter-spacing: 5px;
+}
+
+.serif{
+    font-family: Georgia;
+}
+
+.san-serif{
+    font-family: helvetica;
+}
+
+.monospace{
+    font-family: monospace;
+}
+
+.cursive{
+    font-family: cursive;
+}
+
+.fantasy{
+    font-family: fantasy;
+}
+
+.italic{
+    font-style: italic;
+}
+
+.oblique{
+    font-style: oblique;
+}
+
+.thin, .bold, .bolder{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.thin{
+    font-weight:lighter;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.bolder{
+    font-weight: bolder;
+}
+
+.small{
+    font-size: 6px;
+}
+
+.big{
+    font-size: 78px;
+}.sticky
+
+.inline-box{
+    width: 50px;
+    height: 50px;
+    background-color: #222;
+    color: white;
+    margin: 10px;
+    display: inline-block;
+}
+
+.block {
+    background-color: #444;
+    display: block;
+    margin: 10px;
+}
+
+.ivisible{
+    display: none;
+}
+
+
+.relative {
+    position: relative;
+    background-color: #224;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    top: 100px;
+    left: 40px;
+  }
+  
+
+  .absolute {
+    position: absolute;
+    background-color: #964;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+    top: 2px;
+    right: 2px;
+  }
+  
+  
+  .relative-container {
+    width: 300px;
+    height: 300px;
+    border: 1px solid red;
+    margin-top: 120px;
+    position: relative;
+  }
+  
+  .absolute-1,
+  .absolute-2 {
+    width: 50px;
+    height: 50px;
+    background-color: #422;
+    position: absolute;
+  }
+  
+  .absolute-1 {
+    top: 10px;
+    left: 10px;
+  }
+  
+  .absolute-2 {
+    bottom: 10px;
+    right: 10px;
+  }
+
+.fixed{
+    width: 100px;
+    height: 100px;
+    background-color: #222;
+    color: white;
+    border: 1px solid rebeccapurple;
+    margin-top: 120px;
+    position: fixed;
+    top: 50px;
+    right: 50px;
+}
+
+.absolute-3,
+.absolute-4,
+.absolute-5{
+    width: 50px;
+    height: 50px;
+    background-color: #123;
+    position: absolute;
+}
+
+.absolute-3{
+    top: 0;
+    left: 0;
+}
+
+.absolute-4{
+    top: 10px;
+    left: 10px;
+    background-color: aquamarine;
+}
+
+.absolute-5{
+    top: 40px;
+    left: 40px;
+    background-color: chocolate;
+}
