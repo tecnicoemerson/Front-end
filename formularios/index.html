@@ -9,6 +9,7 @@
 <body>
     <h2>formularios HTML</h2>
     <!--primeiro formulario-->
+
     <!--atributos do formulario-->
     <form action="register.php" method="get">
         <div>
@@ -171,6 +172,15 @@
 
         <!--envio de form-->
         <input type="submit" value="Enviar">
+    </form>
+
+    <hr>
+    
+    <!--direciona a pagina e obtem o resultado da pesquisa-->
+    <form action="http://google.com/search" method="get">
+        <label for="pesquisa">Pesquise no Google:</label>
+        <input type="text" name="q" id="pesquisa">
+        <button type="submit">Pesquisar</button>
     </form>
 </body>
 </html>
