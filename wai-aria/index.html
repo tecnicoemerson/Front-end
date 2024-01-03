@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos de Acessibilidade WAI-ARIA</title>
+</head>
+<body>
+    <h1>Atributos de Acessibilidade WAI-ARIA</h1>
+
+    <!-- caixa de informação com atributos ARIA -->
+
+    <!--role="alert" para informar aos usuários que ela contém uma mensagem importante.-->
+    <!--aria-labelledby indicar aos leitores de tela e ferramentas assistivas qual o rótulo para determinado elemento.-->
+    <div role="alert" aria-labelledby="infoHeading" aria-describedby="infoContent">
+      <h2 id="infoHeading">Informação Importante</h2>
+      <p id="infoContent">Esta é uma mensagem informativa para os usuários.</p>
+    </div>
+  
+    <!-- formulário com campos obrigatórios -->
+
+    <!--aria-required="true" para indicar que são campos de preenchimento obrigatório.-->
+    <!--"aria-label" para fornecer uma descrição personalizada para os leitores de tela, tornando a interação mais clara.-->
+    <form action="#" method="post">
+      <div>
+        <label for="name">Nome:</label>
+        <input type="text" id="name" name="name" required aria-required="true" aria-label="Campo de Nome">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required aria-required="true" aria-label="Campo de Email">
+        <br>
+        <label for="message">Mensagem:</label>
+        <textarea id="message" name="message" required aria-required="true" aria-label="Campo de Mensagem"></textarea>
+      </div>
+  
+      <!--role="status" e "aria-live" para notificar aos usuários sobre ações importantes que ocorrem dinamicamente.-->
+      <div role="status" aria-live="polite">
+
+        <!-- mensagem de sucesso dinâmica -->
+        <p>Mensagem enviada com sucesso!</p>
+      </div>
+  
+      <div role="status" aria-live="assertive">
+        <!-- mensagem de erro dinâmica -->
+        <p>Erro ao enviar a mensagem. Por favor, verifique os campos obrigatórios.</p>
+      </div>
+  
+      <button type="submit" aria-label="Enviar Formulário">Enviar</button>
+    </form>
+  
+</body>
+</html>
