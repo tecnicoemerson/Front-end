@@ -1,0 +1,37 @@
+/*nth-child, que permite escolhe filhos específicos de um determinado*/
+li:nth-child(2) {
+    color: #f00;
+}
+
+li:nth-child(3n) {
+    color: #00f;
+}
+
+/*"hover" passar o cursos sobre o elemento:Obs.: outros estados como o focus seguem o mesmo princípio.*/
+li:hover {
+    background-color: #999;
+}
+
+/*pseudo-elementos. Cada elemento no HTML pode possuir dois elementos extras associados a ele, 
+um antes e outro depois. Podemos referenciar esses pseudo-elementos através dos seletores ::before e ::after:*/
+li::before {
+    content: "(antes) ";
+}
+  
+li::after {
+    content: " (depois)";
+}
+
+/*Semelhante ao nth-child, temos o first-child e last-child para primeiros e últimos filhos de um tipo de elemento, respectivamente:*/
+li:first-child {
+    color: rgb(255, 174, 0);
+}
+
+li:last-child {
+    color: rgb(255, 0, 179);
+}
+
+/*:not(), que permite “negar”, ou inverter, um determinado seletor. Nesse exemplo o usamos para estilizar os filhos que não são o primeiro:*/
+li:not(:first-child) {
+    color: rgb(0, 255, 255);
+}
