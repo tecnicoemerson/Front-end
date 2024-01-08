@@ -23,4 +23,4 @@ do {
       alert("Entrada inválida.")
       break
   }
-} while (opcao !== "3");
+} while (opcao !== "3")
